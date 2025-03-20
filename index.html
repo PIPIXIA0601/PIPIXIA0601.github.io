@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学习风格问卷调查表</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .options {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+        }
+        .submit-btn {
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⭐学习风格大调查💌</h1>
+        <form>
+            <!-- 填空题 -->
+            <div class="question">
+                <h3>🔖写上你响当当的大名</h3>
+                <input type="text" placeholder="请输入姓名" style="width: 300px; padding: 8px;">
+            </div>
+
+            <h2>📕VARK学习风格</h2>
+            <!-- 4选项单选题 -->
+            <div class="question">
+                <h3>1. 我更喜欢老师或汇报人用以下哪种方式来进行上课和呈现：（单选题）</h3>
+                <div class="options">
+                    <label><input type="radio" name="style1"> 图表、地图或图形</label>
+                    <label><input type="radio" name="style1"> 演示、模型或实践环节</label>
+                    <label><input type="radio" name="style1"> 问答、讲座、小组讨论或邀请嘉宾分享</label>
+                    <label><input type="radio" name="style1"> 讲义、书籍或阅读材料</label>
+                </div>
+            </div>
+
+            <div class="question">
+              <h3>2. 在网络上开展学习活动时，我更喜欢：（单选题）</h3>
+              <div class="options">
+                  <label><input type="radio" name="style2"> 有趣的设计和视觉呈现</label>
+                  <label><input type="radio" name="style2"> 展示操作步骤的视频</label>
+                  <label><input type="radio" name="style2"> 详细的文字文章</label>
+                  <label><input type="radio" name="style2"> 能听到专家讲解的视频或音频播客</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>3. 如果我想学习在电脑上完成一个新任务，我会：​（单选题）</h3>
+              <div class="options">
+                  <label><input type="radio" name="style3"> 咨询熟悉这个东西的人</label>
+                  <label><input type="radio" name="style3"> 阅读软件里面的使用指南、说明文字</label>
+                  <label><input type="radio" name="style3"> 找一本相关的书，按照书中的图表指引操作</label>
+                  <label><input type="radio" name="style3"> 直接开始使用，边做边学，通过试错来掌握</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>4. 如果我要出去旅行，我想了解这个旅行的详情，我会：​（单选题）</h3>
+              <div class="options">
+                  <label><input type="radio" name="style4"> 查看地图了解位置</label>
+                  <label><input type="radio" name="style4"> 阅读行程安排的文字描述</label>
+                  <label><input type="radio" name="style4"> 仔细研究旅行的亮点和活动细节</label>
+                  <label><input type="radio" name="style4"> 与行程策划者或同行者交流讨论</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>5. 在学习时，我倾向于：​（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style5"> 通过讨论来理清思路</label>
+                <label><input type="radio" name="style5"> 通过自己的观察，来了解规律、模式</label>
+                <label><input type="radio" name="style5"> 依靠已有的案例、示范</label>
+                <label><input type="radio" name="style5"> 阅读书籍、文章和讲义</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>6. 完成考试或竞赛后，我希望怎样来获得我的成绩反馈：​（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style6"> 结合我的平时实际表现来举例说明我的表现</label>
+                <label><input type="radio" name="style6"> 提供书面、卷面的结果来描述我的成绩</label>
+                <label><input type="radio" name="style6"> 用图表展示我的进步退步趋势</label>
+                <label><input type="radio" name="style6"> 与老师等反馈者一对一的交流讨论</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>7. 选择未来的专业学习方向或职业领域时，我认为以下很重要：​（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style7"> 通过讨论与他人沟通</label>
+                <label><input type="radio" name="style7"> 书面表达，将自己的想法、性格等方面进行清晰流畅的分析</label>
+                <label><input type="radio" name="style7"> 在真实场景中尝试实践，试试自己是否适合</label>
+                <label><input type="radio" name="style7"> 结合图表等来进行一些可视化的分析，例如行业发展趋势</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>8. 如果组装一些家具、玩具，例如一个小木桌等，遇到困难时，我会：​（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style8"> 向有组装经验的人求助</label>
+                <label><input type="radio" name="style8"> 观看类似桌子的组装视频</label>
+                <label><input type="radio" name="style8"> 研究展示各步骤的组装示意图</label>
+                <label><input type="radio" name="style8"> 阅读产品附带的说明书</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>9. 对于包含了含真人讲解、步骤文字和示意图等不同形式的网上教学视频，我学习效果最好的方式是：（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style9"> 观看真人操作演示</label>
+                <label><input type="radio" name="style9"> 主要听讲解</label>
+                <label><input type="radio" name="style9"> 主要看示意图</label>
+                <label><input type="radio" name="style9"> 阅读文字步骤说明</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>10. 如果医生告知我有健康问题并需解答疑问，我会：（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style10"> 通过观看3D模型了解问题所在</label>
+                <label><input type="radio" name="style10"> 阅读解释该问题的网页或文章</label>
+                <label><input type="radio" name="style10"> 查看标注问题的解剖示意图</label>
+                <label><input type="radio" name="style10"> 与医生详细讨论</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>11. 如果想提升摄影拍照水平，我会：（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style11"> 研究相机部件的功能示意图</label>
+                <label><input type="radio" name="style11"> 对比优秀与欠佳照片的改进案例</label>
+                <label><input type="radio" name="style11"> 阅读操作步骤的文字指南</label>
+                <label><input type="radio" name="style11"> 与他人讨论相机功能并提问</label>
+              </div>
+            </div>
+            <div class="question">
+              <h3>12. 如果想学习新的棋盘/卡牌游戏，我会：（单选题）</h3>
+              <div class="options">
+                <label><input type="radio" name="style12"> 听人讲解规则并提问</label>
+                <label><input type="radio" name="style12"> 阅读游戏说明书</label>
+                <label><input type="radio" name="style12"> 先观看别人玩，然后再参与</label>
+                <label><input type="radio" name="style12"> 参考游戏阶段、策略的图解说明</label>
+              </div>
+            </div>
+            
+
+
+
+
+
+
+
+            <h2>📗学习策略</h2>
+            <!-- 5级程度单选题 -->
+            <h3>信息加工</h3>
+            <div class="question">
+                <h3>1. 我会利用小窍门帮助学习，比如在课本上做特殊的标记、知识结构图及做小标题等。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy1"> 很不符合</label>
+                    <label><input type="radio" name="strategy1"> 不太符合</label>
+                    <label><input type="radio" name="strategy1"> 一般</label>
+                    <label><input type="radio" name="strategy1"> 比较符合</label>
+                    <label><input type="radio" name="strategy1"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>2. 当老师讲授新知识时，我会尝试找出其中的主干知识。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy2"> 很不符合</label>
+                    <label><input type="radio" name="strategy2"> 不太符合</label>
+                    <label><input type="radio" name="strategy2"> 一般</label>
+                    <label><input type="radio" name="strategy2"> 比较符合</label>
+                    <label><input type="radio" name="strategy2"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>3. 我通过想象相关情境去学习新知识、新原理。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy3"> 很不符合</label>
+                    <label><input type="radio" name="strategy3"> 不太符合</label>
+                    <label><input type="radio" name="strategy3"> 一般</label>
+                    <label><input type="radio" name="strategy3"> 比较符合</label>
+                    <label><input type="radio" name="strategy3"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>4. 我会用我自己的话来叙述我正在学习的材料。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy4"> 很不符合</label>
+                    <label><input type="radio" name="strategy4"> 不太符合</label>
+                    <label><input type="radio" name="strategy4"> 一般</label>
+                    <label><input type="radio" name="strategy4"> 比较符合</label>
+                    <label><input type="radio" name="strategy4"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>5. 上课时，我会检查自己是否听懂了老师所讲的内容。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy5"> 很不符合</label>
+                    <label><input type="radio" name="strategy5"> 不太符合</label>
+                    <label><input type="radio" name="strategy5"> 一般</label>
+                    <label><input type="radio" name="strategy5"> 比较符合</label>
+                    <label><input type="radio" name="strategy5"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>6. 我会尝试将正学习的知识与自身经验联系起来。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy6"> 很不符合</label>
+                    <label><input type="radio" name="strategy6"> 不太符合</label>
+                    <label><input type="radio" name="strategy6"> 一般</label>
+                    <label><input type="radio" name="strategy6"> 比较符合</label>
+                    <label><input type="radio" name="strategy6"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>7. 阅读时，我会利用章节标题作为指引，去寻找中心思想。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy7"> 很不符合</label>
+                    <label><input type="radio" name="strategy7"> 不太符合</label>
+                    <label><input type="radio" name="strategy7"> 一般</label>
+                    <label><input type="radio" name="strategy7"> 比较符合</label>
+                    <label><input type="radio" name="strategy7"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>8. 我会利用阅读教辅资料或者上网等途径学习不清楚的知识点或不会的题目。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy8"> 很不符合</label>
+                    <label><input type="radio" name="strategy8"> 不太符合</label>
+                    <label><input type="radio" name="strategy8"> 一般</label>
+                    <label><input type="radio" name="strategy8"> 比较符合</label>
+                    <label><input type="radio" name="strategy8"> 很符合</label>
+                </div>
+            </div>
+            
+            
+            <h3>学习态度</h3>
+
+            <div class="question">
+                <h3>9. 我会为自己没有完成课后作业寻找各种借口开脱。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy9"> 很不符合</label>
+                    <label><input type="radio" name="strategy9"> 不太符合</label>
+                    <label><input type="radio" name="strategy9"> 一般</label>
+                    <label><input type="radio" name="strategy9"> 比较符合</label>
+                    <label><input type="radio" name="strategy9"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>10. 我只学我喜欢的学科。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy10"> 很不符合</label>
+                    <label><input type="radio" name="strategy10"> 不太符合</label>
+                    <label><input type="radio" name="strategy10"> 一般</label>
+                    <label><input type="radio" name="strategy10"> 比较符合</label>
+                    <label><input type="radio" name="strategy10"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>11. 我觉得课堂上所学的知识实际作用不大，随便学习应付考试就行了。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy11"> 很不符合</label>
+                    <label><input type="radio" name="strategy11"> 不太符合</label>
+                    <label><input type="radio" name="strategy11"> 一般</label>
+                    <label><input type="radio" name="strategy11"> 比较符合</label>
+                    <label><input type="radio" name="strategy11"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>12. 我花了很多时间去交朋友、参加活动，以致我没有足够的时间和精力完成学习任务。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy12"> 很不符合</label>
+                    <label><input type="radio" name="strategy12"> 不太符合</label>
+                    <label><input type="radio" name="strategy12"> 一般</label>
+                    <label><input type="radio" name="strategy12"> 比较符合</label>
+                    <label><input type="radio" name="strategy12"> 很符合</label>
+                </div>
+            </div>
+
+            <h3>专心程度</h3>
+
+            <div class="question">
+                <h3>13. 我发现当老师讲课时，我常会走神想其他事，并没有认真听老师在讲什么。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy13"> 很不符合</label>
+                    <label><input type="radio" name="strategy13"> 不太符合</label>
+                    <label><input type="radio" name="strategy13"> 一般</label>
+                    <label><input type="radio" name="strategy13"> 比较符合</label>
+                    <label><input type="radio" name="strategy13"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>14. 有时候我会焦躁不安或者情绪多变，导致不能把注意力集中在学习上。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy14"> 很不符合</label>
+                    <label><input type="radio" name="strategy14"> 不太符合</label>
+                    <label><input type="radio" name="strategy14"> 一般</label>
+                    <label><input type="radio" name="strategy14"> 比较符合</label>
+                    <label><input type="radio" name="strategy14"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>15. 我很容易在学习时分心。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy15"> 很不符合</label>
+                    <label><input type="radio" name="strategy15"> 不太符合</label>
+                    <label><input type="radio" name="strategy15"> 一般</label>
+                    <label><input type="radio" name="strategy15"> 比较符合</label>
+                    <label><input type="radio" name="strategy15"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>16. 因为走神，我对一些课堂内容不太明白。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy16"> 很不符合</label>
+                    <label><input type="radio" name="strategy16"> 不太符合</label>
+                    <label><input type="radio" name="strategy16"> 一般</label>
+                    <label><input type="radio" name="strategy16"> 比较符合</label>
+                    <label><input type="radio" name="strategy16"> 很符合</label>
+                </div>
+            </div>
+           
+           
+            <h3>复习策略</h3>
+
+            <div class="question">
+                <h3>17. 在课上，我会做一些图表、表格等把所学材料联系起来。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy17"> 很不符合</label>
+                    <label><input type="radio" name="strategy17"> 不太符合</label>
+                    <label><input type="radio" name="strategy17"> 一般</label>
+                    <label><input type="radio" name="strategy17"> 比较符合</label>
+                    <label><input type="radio" name="strategy17"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>18. 我会将所做的错题拿出来复习，以便确保自己不再发生此类错误。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy18"> 很不符合</label>
+                    <label><input type="radio" name="strategy18"> 不太符合</label>
+                    <label><input type="radio" name="strategy18"> 一般</label>
+                    <label><input type="radio" name="strategy18"> 比较符合</label>
+                    <label><input type="radio" name="strategy18"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>19. 只要有时间，我就会去学习或复习功课。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy19"> 很不符合</label>
+                    <label><input type="radio" name="strategy19"> 不太符合</label>
+                    <label><input type="radio" name="strategy19"> 一般</label>
+                    <label><input type="radio" name="strategy19"> 比较符合</label>
+                    <label><input type="radio" name="strategy19"> 很符合</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>20. 休息时或睡觉前，我会将今天所学的知识在大脑里面过一遍。（程度单选）</h3>
+                <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                    <label><input type="radio" name="strategy20"> 很不符合</label>
+                    <label><input type="radio" name="strategy20"> 不太符合</label>
+                    <label><input type="radio" name="strategy20"> 一般</label>
+                    <label><input type="radio" name="strategy20"> 比较符合</label>
+                    <label><input type="radio" name="strategy20"> 很符合</label>
+                </div>
+            </div>
+
+           
+
+            <h3>处理要点</h3>
+            <div class="question">
+              <h3>21. 几乎每一科考试前，我都是靠死记硬背来复习的。（程度单选）</h3>
+              <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                  <label><input type="radio" name="strategy21"> 很不符合</label>
+                  <label><input type="radio" name="strategy21"> 不太符合</label>
+                  <label><input type="radio" name="strategy21"> 一般</label>
+                  <label><input type="radio" name="strategy21"> 比较符合</label>
+                  <label><input type="radio" name="strategy21"> 很符合</label>
+              </div>
+          </div>
+
+          <div class="question">
+              <h3>22. 老师课堂上讲的内容我听懂了，但自己总结不出来。（程度单选）</h3>
+              <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                  <label><input type="radio" name="strategy22"> 很不符合</label>
+                  <label><input type="radio" name="strategy22"> 不太符合</label>
+                  <label><input type="radio" name="strategy22"> 一般</label>
+                  <label><input type="radio" name="strategy22"> 比较符合</label>
+                  <label><input type="radio" name="strategy22"> 很符合</label>
+              </div>
+          </div>
+
+          <div class="question">
+              <h3>23. 当学习内容比较难时，我要么放弃，要么只学习容易的部分。（程度单选）</h3>
+              <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                  <label><input type="radio" name="strategy23"> 很不符合</label>
+                  <label><input type="radio" name="strategy23"> 不太符合</label>
+                  <label><input type="radio" name="strategy23"> 一般</label>
+                  <label><input type="radio" name="strategy23"> 比较符合</label>
+                  <label><input type="radio" name="strategy23"> 很符合</label>
+              </div>
+          </div>
+
+          <div class="question">
+              <h3>24. 对于语法规则、概念、公式等我常常因为没有领会，只能靠死记硬背。（程度单选）</h3>
+              <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                  <label><input type="radio" name="strategy24"> 很不符合</label>
+                  <label><input type="radio" name="strategy24"> 不太符合</label>
+                  <label><input type="radio" name="strategy24"> 一般</label>
+                  <label><input type="radio" name="strategy24"> 比较符合</label>
+                  <label><input type="radio" name="strategy24"> 很符合</label>
+              </div>
+          </div>
+
+          <h3>学业情绪</h3>
+          <div class="question">
+            <h3>25. 因为成绩差，我失去了学习的信心。（程度单选）</h3>
+            <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                <label><input type="radio" name="strategy25"> 很不符合</label>
+                <label><input type="radio" name="strategy25"> 不太符合</label>
+                <label><input type="radio" name="strategy25"> 一般</label>
+                <label><input type="radio" name="strategy25"> 比较符合</label>
+                <label><input type="radio" name="strategy25"> 很符合</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>26. 当我考试时，我有信心能把自己的水平发挥出来。（程度单选）</h3>
+            <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                <label><input type="radio" name="strategy26"> 很不符合</label>
+                <label><input type="radio" name="strategy26"> 不太符合</label>
+                <label><input type="radio" name="strategy26"> 一般</label>
+                <label><input type="radio" name="strategy26"> 比较符合</label>
+                <label><input type="radio" name="strategy26"> 很符合</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>27. 考试时，我常因担心考砸而不能集中注意力进行考试。（程度单选）</h3>
+            <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                <label><input type="radio" name="strategy27"> 很不符合</label>
+                <label><input type="radio" name="strategy27"> 不太符合</label>
+                <label><input type="radio" name="strategy27"> 一般</label>
+                <label><input type="radio" name="strategy27"> 比较符合</label>
+                <label><input type="radio" name="strategy27"> 很符合</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>28. 每当重要考试来临，我会感到特别恐慌。（程度单选）</h3>
+            <div class="options" style="display: flex; justify-content: space-between; max-width: 600px;">
+                <label><input type="radio" name="strategy28"> 很不符合</label>
+                <label><input type="radio" name="strategy28"> 不太符合</label>
+                <label><input type="radio" name="strategy28"> 一般</label>
+                <label><input type="radio" name="strategy28"> 比较符合</label>
+                <label><input type="radio" name="strategy28"> 很符合</label>
+            </div>
+        </div>
+
+
+
+<h2>📘主观题</h2>
+            <!-- 简答题 -->
+            <div class="question">
+                <h3>1. 你最近一次感到沮丧的失败经历是什么？你如何看待或度过这段“阴霾”时间？（简答题）</h3>
+                <textarea name="answer1" placeholder="写得越多越详细，AI就越了解你！"></textarea>
+            </div>
+            <div class="question">
+              <h3>2. 你是倾向于快速完成任务还是不拖到最后一刻绝不开始？（简答题）</h3>
+              <textarea name="answer2" placeholder="写得越多越详细，AI就越了解你！"></textarea>
+          </div>
+          <div class="question">
+            <h3>3. 对于老师布置的课后探究或动手任务，你是会马上动手开始做起来，还是会在完全搜集好资料后再开始？抑或是其他方案？（简答题）</h3>
+            <textarea name="answer3" placeholder="写得越多越详细，AI就越了解你！"></textarea>
+        </div>
+        <div class="question">
+          <h3>4.努力了很久却看不到进步，你会怎样想、怎样做？（简答题）</h3>
+          <textarea name="answer4" placeholder="写得越多越详细，AI就越了解你！"></textarea>
+      </div>
+
+
+
+
+
+
+            <button type="submit" class="submit-btn">提交问卷</button>
+        </form>
+    </div>
+</body>
+<script>
+  
+  
+  
+  
+  function generateMarkdown() {
+      // 收集答案
+      const answers = [
+          `姓名：${document.querySelector('input[type="text"]').value || '未填写'}`,
+          `VARK学习风格量表结果：`,
+          `1.我更喜欢老师或汇报人用以下哪种方式来进行上课和呈现：${document.querySelector('input[name="style1"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `2.在网络上开展学习活动时，我更喜欢：${document.querySelector('input[name="style2"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `3.如果我想学习在电脑上完成一个新任务，我会：${document.querySelector('input[name="style3"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `4.如果我要出去旅行，我想了解这个旅行的详情，我会：${document.querySelector('input[name="style4"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `5.在学习时，我倾向于：​${document.querySelector('input[name="style5"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `6.完成考试或竞赛后，我希望怎样来获得我的成绩反馈：${document.querySelector('input[name="style6"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `7.选择未来的专业学习方向或职业领域时，我认为以下很重要：${document.querySelector('input[name="style6"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `8.如果组装一些家具、玩具，例如一个小木桌等，遇到困难时，我会：${document.querySelector('input[name="style8"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `9.对于包含了含真人讲解、步骤文字和示意图等不同形式的网上教学视频，我学习效果最好的方式是：${document.querySelector('input[name="style9"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `10.如果医生告知我有健康问题并需解答疑问，我会：${document.querySelector('input[name="style10"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `11.如果想提升摄影拍照水平，我会：${document.querySelector('input[name="style11"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+          `12.如果想学习新的棋盘/卡牌游戏，我会：${document.querySelector('input[name="style12"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`学习策略量表结果：`,
+`维度一：信息加工：`,
+    `1.我会利用小窍门帮助学习，比如在课本上做特殊的标记、知识结构图及做小标题等。${document.querySelector('input[name="strategy1"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `2.当老师讲授新知识时，我会尝试找出其中的主干知识。${document.querySelector('input[name="strategy2"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`3.我通过想象相关情境去学习新知识、新原理。${document.querySelector('input[name="strategy3"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`4.我会用我自己的话来叙述我正在学习的材料。${document.querySelector('input[name="strategy4"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`5.上课时，我会检查自己是否听懂了老师所讲的内容。${document.querySelector('input[name="strategy5"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`6.我会尝试将正学习的知识与自身经验联系起来。${document.querySelector('input[name="strategy6"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`7.阅读时，我会利用章节标题作为指引，去寻找中心思想。${document.querySelector('input[name="strategy7"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`8.我会利用阅读教辅资料或者上网等途径学习不清楚的知识点或不会的题目。${document.querySelector('input[name="strategy8"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+
+
+    `维度二：学习态度：`,
+`1.我会为自己没有完成课后作业寻找各种借口开脱。${document.querySelector('input[name="strategy9"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`2.我只学我喜欢的学科。${document.querySelector('input[name="strategy10"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`3.我觉得课堂上所学的知识实际作用不大，随便学习应付考试就行了。${document.querySelector('input[name="strategy11"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+`4.我花了很多时间去交朋友、参加活动，以致我没有足够的时间和精力完成学习任务。${document.querySelector('input[name="strategy12"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+
+
+   `维度三：专心程度：`,
+    `1.我发现当老师讲课时，我常会走神想其他事，并没有认真听老师在讲什么。${document.querySelector('input[name="strategy13"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `2.有时候我会焦躁不安或者情绪多变，导致不能把注意力集中在学习上。${document.querySelector('input[name="strategy14"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `3.我很容易在学习时分心。${document.querySelector('input[name="strategy15"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `4.因为走神，我对一些课堂内容不太明白。${document.querySelector('input[name="strategy16"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+
+   `维度四：复习策略：`,
+    `1.在课上，我会做一些图表、表格等把所学材料联系起来。${document.querySelector('input[name="strategy17"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `2.我会将所做的错题拿出来复习，以便确保自己不再发生此类错误。${document.querySelector('input[name="strategy18"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `3.只要有时间，我就会去学习或复习功课。${document.querySelector('input[name="strategy19"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `4.休息时或睡觉前，我会将今天所学的知识在大脑里面过一遍。${document.querySelector('input[name="strategy20"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+
+
+    `维度五：处理要点：`,
+    `1.几乎每一科考试前，我都是靠死记硬背来复习的。${document.querySelector('input[name="strategy21"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `2.老师课堂上讲的内容我听懂了，但自己总结不出来。${document.querySelector('input[name="strategy22"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `3.当学习内容比较难时，我要么放弃，要么只学习容易的部分。${document.querySelector('input[name="strategy23"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `4.对于语法规则、概念、公式等我常常因为没有领会，只能靠死记硬背。${document.querySelector('input[name="strategy24"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    
+    `维度六：学业情绪：`,
+    `1.因为成绩差，我失去了学习的信心。${document.querySelector('input[name="strategy25"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `2.当我考试时，我有信心能把自己的水平发挥出来。${document.querySelector('input[name="strategy26"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `3.考试时，我常因担心考砸而不能集中注意力进行考试。${document.querySelector('input[name="strategy27"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+    `4.每当重要考试来临，我会感到特别恐慌。${document.querySelector('input[name="strategy28"]:checked')?.parentNode.textContent.trim() || '未选择'}`,
+
+
+    
+    `主观题结果：`,
+    `1. 你最近一次感到沮丧的失败经历是什么？你如何看待或度过这段“阴霾”时间？\n${document.querySelector('textarea[name="answer1"]')?.value.trim() || '未填写'}`,
+    `2. 你是倾向于快速完成任务还是不拖到最后一刻绝不开始？\n${document.querySelector('textarea[name="answer2"]')?.value.trim() || '未填写'}`,
+    `3. 对于老师布置的课后探究或动手任务，你是会马上动手开始做起来，还是会在完全搜集好资料后再开始？抑或是其他方案？\n${document.querySelector('textarea[name="answer3"]')?.value.trim() || '未填写'}`,
+    `4. 努力了很久却看不到进步，你会怎样想、怎样做？\n${document.querySelector('textarea[name="answer4"]')?.value.trim() || '未填写'}`
+
+
+
+
+
+      ];
+  
+      // 生成Markdown内容
+      const mdContent = `# 问卷反馈\n\n${answers.join('\n\n')}`;
+      
+      // 创建下载
+      const blob = new Blob([mdContent], { type: 'text/markdown' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `问卷反馈_${new Date().toLocaleDateString()}.md`;
+      a.click();
+      URL.revokeObjectURL(url);
+  }
+  
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // 验证函数
+    function validateForm() {
+        const errors = [];
+
+        // 验证姓名
+        if (!document.querySelector('input[type="text"]').value.trim()) {
+            errors.push("姓名未填写");
+        }
+
+        // 验证VARK题目（style1-style12）
+        for (let i = 1; i <= 12; i++) {
+            if (!document.querySelector(`input[name="style${i}"]:checked`)) {
+                errors.push(`VARK问题 ${i}`);
+            }
+        }
+
+        // 验证学习策略题目（strategy1-strategy28）
+        for (let i = 1; i <= 28; i++) {
+            if (!document.querySelector(`input[name="strategy${i}"]:checked`)) {
+                errors.push(`学习策略问题 ${i}`);
+            }
+        }
+
+        // 验证简答题
+        const textareas = document.querySelectorAll('textarea');
+        textareas.forEach((ta, index) => {
+            if (!ta.value.trim()) {
+                errors.push(`主观题 ${index + 1}`);
+            }
+        });
+
+        return errors;
+    }
+
+    // 执行验证
+    const validationErrors = validateForm();
+    
+    if (validationErrors.length > 0) {
+        alert(`请先完成以下题目：\n${validationErrors.join('\n')}`);
+        return false;
+    }
+
+    // 全部验证通过
+    generateMarkdown();
+});
+  </script>
+</html>
